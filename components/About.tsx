@@ -33,7 +33,7 @@ function About() {
         video games, watching movies. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
+        <span className="font-medium">Chess</span>. I'm also
         learning how to drive.
         </p>    
     </motion.section>
