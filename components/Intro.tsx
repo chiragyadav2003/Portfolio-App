@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import profilepic from "../public/profilepic.jpg"
 import {delay, motion} from 'framer-motion'
 import Link from 'next/link';
@@ -9,6 +9,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import {HiDownload} from 'react-icons/hi'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithubSquare} from 'react-icons/fa'
+import { useInView } from 'react-intersection-observer'
+import {useActiveSectionContext} from '@/context/active-section-context'
+import {useSectionInView} from '@/lib/hooks'
 
 const imageVariants = {
     initial:{
@@ -57,10 +60,14 @@ const contactVariants = {
     animate:{ opacity: 1, y: 0, transition:{duration:0.5,delay:0.2} }
 }
 
-function Intro() {
+function Intro() { 
+
+    const {ref} = useSectionInView("Home")
+
     return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] "
     id='home'
+    ref={ref}
     >
 
         <div className='flex items-center justify-center'>
