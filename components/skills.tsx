@@ -4,7 +4,6 @@ import SectionHeading from './SectionHeading'
 import { skillsData } from '@/lib/data'
 import {useSectionInView} from '@/lib/hooks';
 import {motion, stagger} from 'framer-motion';
-import { once } from 'events';
 
 const variants = {
     initial : {
@@ -16,6 +15,7 @@ const variants = {
         y:0,
         transition:{
             staggerChildren:0.1,
+            duration:0.5
         }
     }
 }
@@ -33,7 +33,7 @@ export default function Skills() {
         <motion.ul 
         variants={variants}
         initial='initial'
-        animate='animate'
+        whileInView='animate'
         viewport={{once:true}}
         className=' flex flex-wrap justify-center gap-2 text-lg text-gray-800 '>
             {

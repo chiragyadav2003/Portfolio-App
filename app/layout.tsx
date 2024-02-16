@@ -4,6 +4,7 @@ const inter = Inter({ subsets: ['latin'] })
 import Header from '@/components/Header'
 import Head from 'next/head'
 import ActiveSectionContextProvider from '@/context/active-section-context'
+import ThemeSwitch from '@/components/theme-switch'
 
 export const metadata = {
   title: 'Chirag | Personal Portfolio',
@@ -20,6 +21,7 @@ export default function RootLayout({children,}:
         <ActiveSectionContextProvider>
           <Header/>
           {children}
+          <ThemeSwitch />
         </ActiveSectionContextProvider>
       </body>
     </html>
