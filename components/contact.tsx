@@ -35,7 +35,12 @@ export default function Contact() {
             // action={sendEmail}
 
             action={async(FormData)=>{
-              await sendEmail(FormData)
+              const {data,error} = await sendEmail(FormData)
+              if(error){
+                alert(error)
+                return;
+              }
+              alert("Email sent successfully!")
             }}
           >
             <input
