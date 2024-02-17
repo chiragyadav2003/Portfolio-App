@@ -21,7 +21,8 @@ export default function Contact() {
     viewport={{once: true}}
     >
         <SectionHeading>Contact Me</SectionHeading>
-        <p className='text-gray-700 -mt-6'>Please contact me directly at {" "}
+        <p className='text-gray-700 -mt-6 dark:text-white/80'>
+          Please contact me directly at {" "}
             <a href='mailto:yadavchirag9009@gmail.com' className='underline font-semibold ' >
             yadavchirag9009@gmail.com</a> or through this form.
         </p>
@@ -44,21 +45,21 @@ export default function Contact() {
               toast.success('Message sent successfully! I will get back to you soon.')
             }}
           >
-            <input
-              className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-              name="senderEmail"
-              type="email"
-              required
-              maxLength={500}
-              placeholder="Your email"
-            />
-            <textarea
-              className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-              name="message"
-              placeholder="Your message"
-              required
-              maxLength={5000}
-            />
+          <input
+            className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            name="senderEmail"
+            type="email"
+            required
+            maxLength={500}
+            placeholder="Your email"
+          />
+          <textarea
+            className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            name="message"
+            placeholder="Your message"
+            required
+            maxLength={5000}
+          />
             <SubmitBtn />
         </form>
     </motion.section>

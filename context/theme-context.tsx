@@ -45,10 +45,10 @@ export default function ThemeContextProvider({children}:ThemeContextProviderProp
     }, [])
 
 
-  return <ThemeContext.Provider value={{theme,toggleTheme}}>
-      {children}
+    return <ThemeContext.Provider value={{theme,toggleTheme}}>
+        {children}
     </ThemeContext.Provider>
-  
+
 }
 
 export function useThemeContext(){

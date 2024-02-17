@@ -22,7 +22,7 @@ const variants = {
 
 export default function Skills() {
     const {ref} = useSectionInView("Skills")
-  return (
+    return (
     <section
     ref = {ref}
     id='skills'
@@ -41,7 +41,7 @@ export default function Skills() {
                     return(
                         <motion.li key={index}
                         variants={variants}
-                        className='bg-white border borderBlack rounded-xl px-5 py-3'
+                        className='bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80'
                         >
                             {skill}
                         </motion.li>

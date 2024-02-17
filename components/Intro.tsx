@@ -60,7 +60,7 @@ const contactVariants = {
 }
 
 function Intro() { 
-    const {ref} = useSectionInView("Home")
+    const {ref} = useSectionInView("Home",0.5)
     const {setActiveSection,setTimeOfLastClick } = useActiveSectionContext()
     return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] "
