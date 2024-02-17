@@ -6,6 +6,7 @@ import Head from 'next/head'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 import ThemeSwitch from '@/components/theme-switch'
 import { Toaster } from 'react-hot-toast';
+import Footer from '@/components/footer'
 
 export const metadata = {
   title: 'Chirag | Personal Portfolio',
@@ -22,6 +23,7 @@ export default function RootLayout({children,}:
         <ActiveSectionContextProvider>
           <Header/>
           {children}
+          <Footer/>
           <Toaster position='top-right' />
           <ThemeSwitch />
         </ActiveSectionContextProvider>
