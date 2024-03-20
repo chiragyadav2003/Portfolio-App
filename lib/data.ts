@@ -43,7 +43,7 @@ export const experiencesData = [
     {
     title: "Full-Stack Developer",
     location: "Delhi, India",
-    description:"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    description:"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma ORM, Connection Pooling, Serverless(CLoudFlare-Workers) and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2024 - present",
     },
@@ -51,12 +51,12 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "Mega Blog App",
+        title: "DevBlog",
         description:
         "A blogging app where user can create, update, read and delete blogs. It has a user authentication system and a dashboard for the user to manage their blogs.",
-        tags: ["React", "Appwrite", "Redux", "Tailwind","react-hook-form","timymce-react"],
+        tags: ["React", "ClouFlare-Workere", "Zod", "Tailwind","Typescript","Prisma ORM","Connection Pooling","Postgres","JWT","NPM Publish"],
         imageUrl: Blog,
-        link:"https://mega-blog-self.vercel.app/"
+        link:"https://dev-blog-alpha-ten.vercel.app/"
     },
     {
         title: "CodePen",
